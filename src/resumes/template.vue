@@ -1,7 +1,7 @@
 <template>
-<div class="resume" id="template">
-  <h1>This is a template</h1>
-</div>
+  <div class="resume" id="template">
+    <h1>This is a template</h1>
+  </div>
 </template>
 
 <script>
@@ -13,5 +13,4 @@ export default Vue.component(name, getVueOptions(name));
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="less" scoped>
-</style>
+<style lang="less" scoped></style>

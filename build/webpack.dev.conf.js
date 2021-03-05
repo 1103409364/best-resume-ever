@@ -1,17 +1,16 @@
-var utils = require('./utils')
-var webpack = require('webpack')
-var config = require('../config')
-var merge = require('webpack-merge')
-var baseWebpackConfig = require('./webpack.base.conf')
-var HtmlWebpackPlugin = require('html-webpack-plugin')
-var FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
-var VueLoaderPlugin = require('vue-loader/lib/plugin')
-
+var utils = require('./utils');
+var webpack = require('webpack');
+var config = require('../config');
+var merge = require('webpack-merge');
+var baseWebpackConfig = require('./webpack.base.conf');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+var FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
+var VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 // add hot-reload related code to entry chunks
 Object.keys(baseWebpackConfig.entry).forEach(function(name) {
-  baseWebpackConfig.entry[name] = ['./build/dev-client'].concat(baseWebpackConfig.entry[name])
-})
+  baseWebpackConfig.entry[name] = ['./build/dev-client'].concat(baseWebpackConfig.entry[name]);
+});
 
 module.exports = merge(baseWebpackConfig, {
   module: {
@@ -37,4 +36,4 @@ module.exports = merge(baseWebpackConfig, {
     }),
     new FriendlyErrorsPlugin()
   ]
-})
+});

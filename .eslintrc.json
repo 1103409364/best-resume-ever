@@ -82,7 +82,7 @@
     "implicit-arrow-linebreak": "off",
     "indent": [
       "error",
-      4,
+      2,
       {
         "MemberExpression": "off",
         "SwitchCase": 1

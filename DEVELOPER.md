@@ -14,12 +14,12 @@ Table of Contents
 
 In the directory `src/resumes` you will find all existing templates.
 
-
 ### Creating New Templates
 
 1. Create a copy of `src/resumes/template.vue`.
 
 2. Rename file and update template name:
+
 ```javascript
 let name = 'TEMPLATE-NAME';
 ```
@@ -33,9 +33,10 @@ Your new resume will be now reachable at localhost:8080/#/resume/TEMPLATE-NAME.
 
 5. Export resumes as PDF with `npm run export`. Verify export of new template.
 
-4. Generate previews by converting PDF-files to PNG-files with `npm run preview`.
+6. Generate previews by converting PDF-files to PNG-files with `npm run preview`.
 
-5. Add preview to `/src/pages/home.vue`:
+7. Add preview to `/src/pages/home.vue`:
+
 ```javascript
 <div class="preview">
   <router-link v-bind:to="'/resume/TEMPLATE-NAME'">
@@ -65,13 +66,11 @@ These fonts are included:
 
 - Source Sans Pro
 
-
 ### Adding a New Font
 
 All fonts are installed via npm. To add a new font, search for the associated npm-module. Add the module to the package.json and install it. Import the css file in `src/App.vue`.
 <br>
 <br>
-
 
 ## Export
 

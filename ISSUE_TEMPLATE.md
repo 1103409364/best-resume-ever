@@ -1,6 +1,7 @@
 <!-- REMOVE EVERYTHING WRITTEN IN UPPERCASE -->
 
 ### Case
+
 <!-- IS IT A:
 - BUG
 - FEATURE REQUEST
@@ -9,13 +10,16 @@
 -->
 
 ## Issue
+
 <!-- DESCRIBE WHY YOU OPEN THIS ISSUE -->
 
 ## Info
+
 - Operating System: <!-- LINUX / OSX / WINDOWS -->
 - Node-Version: <!-- RUN 'node -v' TO CHECK YOUR VERSION -->
 
 ## Reproduce
+
 <!--
   IF YOU HAVE A BUG,
   WRITE DOWN EACH STEP TO REPRODUCE THE PROBLEM
